@@ -1,14 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-""" Descarga imágenes de IPcams públicas para hacer TimeLapses """
-
+"""
+Descarga imágenes de IPcams públicas para hacer TimeLapses
+"""
 import urllib
 import time
 import sys
 import os
 
 def main(argv):
-    """ Descarga una imagen desde una url dada periódicamente y la guarda en una carpeta """
+    """
+    Descarga una imagen desde una url dada periódicamente y la guarda en una carpeta
+    Parámetros:
+        argv - <nombre_de_la_carpeta> <horas_a_capturar> <intervalo_en_segundos> <url_de_la_webcam>
+    """
     if len(sys.argv) < 5:
         sys.exit('Este script requiere 4 argumentos: \n'\
         'python capture.py <nombre_de_la_carpeta> '\
